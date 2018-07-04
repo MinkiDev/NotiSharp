@@ -14,7 +14,7 @@
 		<releaseNotes>Bug fixes and performance improvements</releaseNotes>
 		<copyright>Copyright 2018 MinkiDev</copyright>
 		<tags>c# windows forms notification</tags>
-		<summary>NotiSharp is a customized notification service library for Windows.</summary>
+		<summary>NotiSharp is a customized notification service library for Windows</summary>
 	</metadata>
 	<files>
 		<file src="README.md" />
