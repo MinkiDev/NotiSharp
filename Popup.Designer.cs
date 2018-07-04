@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace NotificationForm
+namespace NotiSharp
 {
     partial class Popup
     {

@@ -3,7 +3,7 @@ using System.Drawing;
 using System.Media;
 using System.Windows.Forms;
 
-namespace NotificationForm
+namespace NotiSharp
 {
     public partial class Popup : Form
     {
