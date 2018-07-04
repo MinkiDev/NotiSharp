@@ -7,15 +7,23 @@ namespace NotiSharp
 {
     public partial class Popup : Form
     {
-        public Popup(Bitmap icon, string content)
+        public Popup()
         {
             InitializeComponent();
-            PopupLogo.Image = icon;
-            ContentArea.Text = content;
             CurrentTimeLabel.Text = DateTime.Now.ToLongDateString() + " " + DateTime.Now.ToLongTimeString();
             StartPosition = FormStartPosition.Manual;
             Location = GetLocation();
-            SystemSounds.Beep.Play();
+            //SystemSounds.Beep.Play();
+        }
+
+        public void SetIcon(Bitmap res)
+        {
+            if (Icon != null) PopupLogo.Image = res;
+        }
+
+        public void SetText(string content)
+        {
+            if (Text != null) ContentArea.Text = content;
         }
 
         private const int Marx = 10; // X Position Margin
