@@ -10,10 +10,12 @@ namespace NotiSharp
         public Popup()
         {
             InitializeComponent();
-            CurrentTimeLabel.Text = DateTime.Now.ToLongDateString() + " " + DateTime.Now.ToLongTimeString();
             StartPosition = FormStartPosition.Manual;
             Location = GetLocation();
-            //SystemSounds.Beep.Play();
+            if (PlaySound)
+            {
+                SystemSounds.Beep.Play();
+            }
         }
 
         public void SetIcon(Bitmap res)
@@ -24,6 +26,24 @@ namespace NotiSharp
         public void SetText(string content)
         {
             if (Text != null) ContentArea.Text = content;
+        }
+
+        public void SetSize(Size size)
+        {
+            Size defSize = Size;
+            if ((size.Width > defSize.Width) && (size.Height > defSize.Height))
+            {
+                Size = size;
+                InnerPane.Size += defSize - size;
+                ContentArea.Size += defSize - size;
+            }
+        }
+
+        private bool PlaySound = false;
+
+        public void SetNotificationSound(bool isPlaySound)
+        {
+            isPlaySound = PlaySound;
         }
 
         private const int Marx = 10; // X Position Margin

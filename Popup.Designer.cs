@@ -33,7 +33,6 @@ namespace NotiSharp
             this.InnerPane = new System.Windows.Forms.Panel();
             this.ContentArea = new System.Windows.Forms.Label();
             this.PopupLogo = new System.Windows.Forms.PictureBox();
-            this.CurrentTimeLabel = new System.Windows.Forms.Label();
             this.InnerPane.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PopupLogo)).BeginInit();
             this.SuspendLayout();
@@ -45,7 +44,7 @@ namespace NotiSharp
             this.InnerPane.Controls.Add(this.PopupLogo);
             this.InnerPane.Location = new System.Drawing.Point(5, 5);
             this.InnerPane.Name = "InnerPane";
-            this.InnerPane.Size = new System.Drawing.Size(490, 215);
+            this.InnerPane.Size = new System.Drawing.Size(490, 90);
             this.InnerPane.TabIndex = 0;
             this.InnerPane.Click += new System.EventHandler(this.InnerPane_Click);
             // 
@@ -53,11 +52,10 @@ namespace NotiSharp
             // 
             this.ContentArea.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.ContentArea.ForeColor = System.Drawing.Color.White;
-            this.ContentArea.Location = new System.Drawing.Point(100, 20);
-            this.ContentArea.MaximumSize = new System.Drawing.Size(375, 175);
-            this.ContentArea.MinimumSize = new System.Drawing.Size(375, 175);
+            this.ContentArea.Location = new System.Drawing.Point(85, 13);
+            this.ContentArea.MinimumSize = new System.Drawing.Size(390, 64);
             this.ContentArea.Name = "ContentArea";
-            this.ContentArea.Size = new System.Drawing.Size(375, 175);
+            this.ContentArea.Size = new System.Drawing.Size(390, 64);
             this.ContentArea.TabIndex = 0;
             this.ContentArea.Click += new System.EventHandler(this.ContentArea_Click);
             // 
@@ -65,7 +63,7 @@ namespace NotiSharp
             // 
             this.PopupLogo.ErrorImage = null;
             this.PopupLogo.InitialImage = null;
-            this.PopupLogo.Location = new System.Drawing.Point(20, 20);
+            this.PopupLogo.Location = new System.Drawing.Point(13, 13);
             this.PopupLogo.Name = "PopupLogo";
             this.PopupLogo.Size = new System.Drawing.Size(64, 64);
             this.PopupLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -73,24 +71,12 @@ namespace NotiSharp
             this.PopupLogo.TabStop = false;
             this.PopupLogo.Click += new System.EventHandler(this.PopupLogo_Click);
             // 
-            // CurrentTimeLabel
-            // 
-            this.CurrentTimeLabel.AutoSize = true;
-            this.CurrentTimeLabel.Font = new System.Drawing.Font("맑은 고딕", 10F);
-            this.CurrentTimeLabel.ForeColor = System.Drawing.Color.White;
-            this.CurrentTimeLabel.Location = new System.Drawing.Point(10, 225);
-            this.CurrentTimeLabel.Name = "CurrentTimeLabel";
-            this.CurrentTimeLabel.Size = new System.Drawing.Size(108, 19);
-            this.CurrentTimeLabel.TabIndex = 1;
-            this.CurrentTimeLabel.Text = "CURRENT_TIME";
-            // 
             // Popup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DodgerBlue;
-            this.ClientSize = new System.Drawing.Size(500, 250);
-            this.Controls.Add(this.CurrentTimeLabel);
+            this.ClientSize = new System.Drawing.Size(500, 100);
             this.Controls.Add(this.InnerPane);
             this.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -105,14 +91,12 @@ namespace NotiSharp
             this.InnerPane.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PopupLogo)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
         private System.Windows.Forms.Panel InnerPane;
         private System.Windows.Forms.PictureBox PopupLogo;
-        private System.Windows.Forms.Label CurrentTimeLabel;
         private System.Windows.Forms.Label ContentArea;
     }
 }
