@@ -15,14 +15,19 @@ NotiSharp.Popup pup = new NotiSharp.Popup();
 pup.SetText("This is an example content for NotiSharp");
 ```
 
-#### Set an icon for notification (Bitmap)
+#### Set an icon for notification (optional)
 ```csharp
 pup.SetIcon(new Bitmap(@"C:/NotiSharp.jpg"));
 ```
 
-#### Change the size of popup window
+#### Change the size of popup window (optional, default value is 500*100)
 ```csharp
 pup.SetSize(new Size(600, 400)); // not working in current version (layout problem)
+```
+
+#### Play windows alert sound (optional, default value is false)
+```csharp
+pup.SetNotificationSound(true);
 ```
 
 #### Show popup window
