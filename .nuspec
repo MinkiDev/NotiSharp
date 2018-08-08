@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
 	<metadata>
 		<id>NotiSharp</id>
-		<version>1.4.2</version>
+		<version>1.4.3</version>
 		<title>NotiSharp</title>
 		<authors>MinkiDev</authors>
 		<owners>MinkiDev</owners>
@@ -11,7 +11,7 @@
 		<iconUrl>https://i.imgur.com/UStZXUS.png</iconUrl>
 		<requireLicenseAcceptance>true</requireLicenseAcceptance>
 		<description>NotiSharp is a customized notification service library for Windows</description>
-		<releaseNotes>Bug fixes and performance improvements</releaseNotes>
+		<releaseNotes>Default popup form size and some popup properties are changed</releaseNotes>
 		<copyright>Copyright 2018 MinkiDev</copyright>
 		<tags>c# windows forms notification</tags>
 		<summary>NotiSharp is a customized notification service library for Windows</summary>
